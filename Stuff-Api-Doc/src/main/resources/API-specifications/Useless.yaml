@@ -1,0 +1,31 @@
+openapi: "3.0.0"
+info:
+  description: "The Useless Api. To tests and learn stuff."
+  version: "1.0.0"
+  title: "Useless"
+  contact:
+    email: "anuraj141kathait@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+paths:
+  /why:
+    get:
+      tags:
+        - "whyYouCalledThis"
+      summary: "Message asking why you called this Api."
+      description: ""
+      operationId: "whyCall"
+      responses:
+        "200":
+          description: "Hey why?"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+        "405":
+          description: "Invalid Input. No input Required."
+        "500":
+          description: "Uselss Api is Useless"
