@@ -29,3 +29,26 @@ paths:
           description: "Invalid Input. No input Required."
         "500":
           description: "Uselss Api is Useless"
+  /ping:
+    get:
+      tags:
+        - "pong"
+      summary: "returns pong"
+      description: "returns pong for ping"
+      operationId: "getPing"
+      responses:
+        "200":
+          description: "OK. Pong"
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/pingResponse'
+        default:
+          description: "Unexpected Error"
+components:
+  schemas:
+    pingResponse:
+      type: object
+      properties:
+        result:
+          type: string

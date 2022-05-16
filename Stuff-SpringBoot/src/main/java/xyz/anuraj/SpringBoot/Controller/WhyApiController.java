@@ -10,9 +10,9 @@ import java.util.List;
 
 @Controller
 @RequestMapping("${openapi.useless.base-path:}")
-public class UselessApiController implements WhyApi {
+public class WhyApiController implements WhyApi {
 
-    public UselessApiController() {
+    public WhyApiController() {
     }
 
     @Override

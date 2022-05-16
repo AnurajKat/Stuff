@@ -10,8 +10,8 @@ Related: https://github.com/OpenAPITools/openapi-generator/issues/746
 
 # Markdown tick mark?
 ```aidl
- `&cross` followed by a semicolon for cross
- `&check` followed by a semicolon for check 
+ &cross followed by a semicolon for cross
+ &check followed by a semicolon for check 
 ```
 
 # Make SpringBoot  run outside IntelliJ
@@ -37,3 +37,6 @@ Make sure the pom has been edited as mentioned in the [link](https://docs.spring
     </build>
 ```
 Run `mvn clean package spring-boot:repackage` after packaging the module
+
+# Open Api 3 examples 
+https://yaml101.com/yaml-examples/yaml-openapi/
