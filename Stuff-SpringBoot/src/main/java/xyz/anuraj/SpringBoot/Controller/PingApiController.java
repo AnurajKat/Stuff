@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import xyz.anuraj.Stuff.Useless.api.PingApi;
-import xyz.anuraj.Stuff.Useless.api.PingResponse;
+import xyz.anuraj.Stuff.Useless.model.PingResponse;
 
 @Controller
 @RequestMapping("${openapi.useless.base-path:}")

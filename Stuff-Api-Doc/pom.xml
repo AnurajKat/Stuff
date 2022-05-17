@@ -50,7 +50,7 @@
                             </inputSpec>
                             <generatorName>spring</generatorName>
                             <apiPackage>xyz.anuraj.Stuff.Useless.api</apiPackage>
-                            <modelPackage>xyz.anuraj.Stuff.Useless.api</modelPackage>
+                            <modelPackage>xyz.anuraj.Stuff.Useless.model</modelPackage>
                             <generateSupportingFiles>true</generateSupportingFiles>
                             <supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
                             <configOptions>
