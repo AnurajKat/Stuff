@@ -16,7 +16,7 @@ Implements the API specifications.
 playground for Apache FOP.
 Apache FOP is being used to create pdfs from xml files.
 
-# In Porgress
+# In Progress
 - Apache Fop in Stuff-Templates
 - Integrate use of properties file in Stuff-Templates.
   - Probably creating custom annotation just like `@Value` in Spring
@@ -35,7 +35,7 @@ Apache FOP is being used to create pdfs from xml files.
 
 # RESOURCES
 
+- [Issues faced](src/main/resources/Issues.md)
 - [Apache FOP example](https://www.netjstech.com/2015/07/how-to-create-pdf-from-xml-using-apache-fop.html)
 - [github : Apache FOP with custom font example](https://github.com/savva-k/apache-fop-example)
 - [blog: Apache FOP with font example](https://imsavva.com/generating-pdf-with-apache-fop-and-maven-tutorial/)
-- 
