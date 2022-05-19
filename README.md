@@ -23,6 +23,7 @@ Apache FOP is being used to create pdfs from xml files.
   - apache commons-configuration as plan B when I'll get too frustrated of custom annotation.
 
 # TODO
+- Shift Property Reader to another module. probably create a new to store all utils.
 - Make Useless API somewhat useful or create some useful api
 - Template module for HTML pages and probably pdfs
 - Module to generate Docker images of the Service

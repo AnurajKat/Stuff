@@ -1,52 +1,44 @@
 package xyz.anuraj.FopExploration;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Objects;
 import java.util.Properties;
 
 public class PropertiesReader {
 
-    static String fileName;
-    static Properties properties;
-    static InputStream inputStream;
+    private final String fileName;
+    private Properties properties;
 
     public PropertiesReader() {
         fileName = "Stuff-Templates\\src\\main\\resources\\fapp.properties";
-        loadPropertiesFile();
-    }
-
-    private static void loadPropertiesFile() {
+        //loadPropertiesFile();
         try {
-            inputStream = new FileInputStream(fileName);
-            properties = new Properties();
-            properties.load(inputStream);
-        }
-        catch (IOException e) {
+            properties = propertiesLoader();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
+    public PropertiesReader(String pathToPropertiesFile) {
+        fileName = pathToPropertiesFile;
+        try {
+            properties = propertiesLoader();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
-//    @Target(ElementType.FIELD)
-//    @Retention(RetentionPolicy.RUNTIME)
-//    public @interface PropertyValue {
-//
-//    }
 
-
+    private Properties propertiesLoader() throws IOException {
+        Properties configuration= new Properties();
+        InputStream inputStream = PropertiesReader.class.getClassLoader().getResourceAsStream(fileName);
+        configuration.load(inputStream);
+        Objects.requireNonNull(inputStream).close();
+        return  configuration;
+    }
 
 
     public String getProperty(String propertyName) {
-
         return properties.getProperty(propertyName);
-
-//        try (InputStream input = new FileInputStream(fileName)) {
-//            Properties properties = new Properties();
-//            properties.load(input);
-//            return properties.getProperty(propertyName);
-//        }
-//        catch (IOException e) {
-//            e.printStackTrace();
-//        }
     }
 }

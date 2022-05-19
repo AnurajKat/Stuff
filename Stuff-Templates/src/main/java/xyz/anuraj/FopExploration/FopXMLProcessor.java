@@ -14,11 +14,16 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class FopXMLProcessor {
-    static PropertiesReader propertiesReader;
+    private static PropertiesReader propertiesReader;
+    private static String outputPath;
+
+    public FopXMLProcessor() {
+        propertiesReader = new PropertiesReader();
+        outputPath = propertiesReader.getProperty("test.output.path");
+    }
 
     public static void main(String[] args) {
         FopXMLProcessor fopXMLProcessor = new FopXMLProcessor();
-        propertiesReader = new PropertiesReader();
         try {
             fopXMLProcessor.convertToPDF();
         } catch (FOPException | IOException | TransformerException e) {
@@ -27,8 +32,6 @@ public class FopXMLProcessor {
     }
 
     private void convertToPDF() throws IOException, FOPException, TransformerException {
-        String basePath = "Stuff-Templates\\src\\main\\resources";
-        String outputPath= "Stuff-Templates\\target";
         String xsltFilePathAndName = propertiesReader.getProperty("test.template.xslt.location");//String.join("\\",basePath,"fop-docs","name2fo.xsl");
         String xmlFilePathAndName = propertiesReader.getProperty("test.data.xml.location");//String.join("\\",basePath,"data-documents","test.xml");
         String pdfFilePathAndName= String.join("\\",outputPath,"testOutput.pdf");
