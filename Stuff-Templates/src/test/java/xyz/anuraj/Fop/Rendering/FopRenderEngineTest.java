@@ -28,7 +28,7 @@ public class FopRenderEngineTest {
     private Executable convertToPDF() throws PropertyNotFoundException {
         String xsltFilePathAndName = propertiesReader.getProperty("test.template.xslt.location");//String.join("\\",basePath,"fop-docs","name2fo.xsl");
         String xmlFilePathAndName = propertiesReader.getProperty("test.data.xml.location");//String.join("\\",basePath,"data-documents","test.xml");
-        String pdfFilePathAndName= "testOutput.pdf";//String.join("/",propertiesReader.getProperty("test.output.path"),"testOutput.pdf");
+        String pdfFilePathAndName= propertiesReader.getProperty("test.output.file.name");//String.join("/",propertiesReader.getProperty("test.output.path"),"testOutput.pdf");
         FopRenderEngine fopRenderEngine = new FopRenderEngine(propertiesReader);
         fopRenderEngine.renderDocuments(xsltFilePathAndName,xmlFilePathAndName,pdfFilePathAndName);
         return null;

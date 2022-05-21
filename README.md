@@ -17,9 +17,11 @@ playground for Apache FOP.
 Apache FOP is being used to create pdfs from xml files.
 
 # In Progress
-- Apache Fop in Stuff-Templates
+- ~~Apache Fop in Stuff-Templates~~ Shift to [openHtmlToPdf](https://github.com/danfickle/openhtmltopdf)
+  - openHtmlToPdf leverages HTML ands CSS standards for template.
+  - No restrictions on data source format (XML in case of FOP) . Support for different data source needs to be implemented.
 - Integrate use of properties file in Stuff-Templates.
-  - Probably creating custom annotation just like `@Value` in Spring
+  - ~~Probably creating custom annotation just like `@Value` in Spring~~ Going with plan B.
   - apache commons-configuration as plan B when I'll get too frustrated of custom annotation.
 
 # TODO

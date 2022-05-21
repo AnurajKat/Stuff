@@ -1,0 +1,40 @@
+<Items>
+    <Category>
+        <CategoryName>Electronics</CategoryName>
+        <item>
+            <name>Mobile</name>
+            <price>26000</price>
+        </item>
+        <item>
+            <name>Laptop</name>
+            <price>89999</price>
+        </item>
+        <item>
+            <name>Gaming PC</name>
+            <price>90000</price>
+        </item>
+        <item>
+            <name>Server</name>
+            <price>65000</price>
+        </item>
+    </Category>
+    <Category>
+        <CategoryName>Coffee</CategoryName>
+        <item>
+            <name>V60</name>
+            <price>2200</price>
+        </item>
+        <item>
+            <name>percolator</name>
+            <price>600</price>
+        </item>
+        <item>
+            <name>filter paper</name>
+            <price>500</price>
+        </item>
+        <item>
+            <name>Coffee Grounds</name>
+            <price>520</price>
+        </item>
+    </Category>
+</Items>
