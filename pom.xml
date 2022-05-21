@@ -12,6 +12,7 @@
         <module>Stuff-SpringBoot</module>
         <module>Stuff-release-package</module>
         <module>Stuff-Templates</module>
+        <module>Stuff-common</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
