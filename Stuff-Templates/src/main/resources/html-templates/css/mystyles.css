@@ -1,0 +1,10 @@
+@Page {
+  size: 210mm 297mm;
+  margin: 1.5cm;
+}
+.myclass{
+  font-family: Helvetica, sans-serif;
+  font-size:8pt;
+  font-weight: normal;
+  color: blue;
+}
