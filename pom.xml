@@ -13,6 +13,7 @@
         <module>Stuff-release-package</module>
         <module>Stuff-Templates</module>
         <module>Stuff-common</module>
+        <module>Stuff-Document-Generator</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
